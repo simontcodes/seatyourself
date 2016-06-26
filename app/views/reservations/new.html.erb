@@ -1,0 +1,29 @@
+<h1>Create Reservation</h1>
+<%= form_for [@restaurant, @reservation] do |f| %>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br/>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :guest %><br>
+    <%= f.text_field :guest %>
+  </div>
+  <div class="field">
+    <%= f.label :date %>
+<<<<<<< HEAD
+    <%= f.datetime_select :date, discard_year:true %>
+=======
+    <%= f.datetime_select :date, discard_year:true, minute_step:30 %>
+>>>>>>> old-state
+  </div>
+  <div class="field">
+    <%= f.label :available_time_slots %>
+  </div>
+  <div class="field">
+    <%= f.submit "Submit Reservation" %>
+  </div>
+<% end %>

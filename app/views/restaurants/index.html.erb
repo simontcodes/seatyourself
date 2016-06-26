@@ -1,0 +1,10 @@
+<h1>Seat Yourself</h1>
+
+<h3>Restaurants</h3>
+
+<p><% @restaurants.each do |restaurant| %>
+<p><%= restaurant.name %></p>
+<p><%= restaurant.address %></p>
+<p><%= restaurant.phone_number %></p>
+<%= link_to "Reserve", new_restaurant_reservation_path(restaurant) %>
+<% end %>

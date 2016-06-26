@@ -1,0 +1,223 @@
+/* Main Layout Styling */
+
+/*=================Loading Fonts===============*/
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Roboto);
+}
+
+/*==========Overring Browser Defaults==========*/
+
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+}
+
+
+/*============Layout Body Settings===========*/
+
+body {
+  background-color: #fefcf9;
+}
+
+.container {
+	min-height: 100%;
+	margin-bottom: -330px;
+	position: relative;
+}
+
+/*================Header Style===============*/
+
+header {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #65babf;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .82);
+}
+
+#logo {
+  margin-left: 30px;
+  text-align: left;
+  font-family: 'Dancing Script', cursive;;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fefcf9;
+  text-shadow: 0.5px 0.5px 1px #000000;
+  opacity: 1;
+  transition: 0.2s;
+  -webkit-user-select: none;
+}
+
+#logo:hover {
+  color: #fefcf9;
+  text-shadow: 0.2px 0.2px 0.2px #f1aa7e;
+}
+
+.fade:hover {
+  opacity: 0.5;
+}
+
+.nav_bar {
+  position: relative;
+  top: -95%;
+  left: 75%;
+}
+
+header ul li:first-child {
+  box-sizing: border-box;
+  height: 45px;
+  line-height: 45px;
+  width: 120px;
+  display: inline-block;
+  padding: 0.4em 1em;
+  margin-right: 10px;
+  background-color: #f1aa7e;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0.5px 0.5px 1px #000001;
+  font-family: 'Roboto';
+	transition: 0.2s;
+}
+
+header ul li:first-child:hover {
+	background-color: #FF530D;
+}
+
+header ul li {
+  box-sizing: border-box;
+  position: relative;
+	bottom: 7px;
+  width: 120px;
+	color: white;
+  display: inline-block;
+  padding: 0.4em 1em;
+  margin-right: 10px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Roboto';
+	transition: 0.1s;
+}
+
+header ul li:hover {
+	font-weight: bold;
+}
+
+
+header ul li a {
+	position: relative;
+	bottom: 7px;
+	box-sizing: content-box;
+	color: white;
+	padding:
+	display: list-item;
+	list-style-type: none;
+}
+
+/*==============BODY STYLING==============*/
+
+main h1 {
+	position: relative;
+	bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  text-align: center;
+	opacity: 0.75;
+}
+
+main p {
+	text-align: center;
+	margin:0 300px 0 300px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*===============FOOTER STYLING=============*/
+
+footer {
+	position:fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #08899e;
+	box-shadow: inset 2px 2px 2px 2px rgba(.82, .82, .82, .82);
+}
+
+footer p:first-child {
+	display: inline;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 25px;
+	font-size: 12px;
+	color: white;
+	opacity: 0.7;
+}
+
+footer .restaurant_link{
+	float: right;
+	margin-right: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: white;
+	opacity: 0.9;
+}
+
+footer a {
+	color: #f1aa7e;
+	font-weight: bold;
+	opacity: 1;
+}
+
+footer a:hover {
+	color: #FF530D
+}
+
+#logo_bottom {
+	margin-left: 445px;    /*Find out how to center it correctly */
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fefcf9;
+  text-shadow: 0.5px 0.5px 1px #000000;
+  opacity: 0.6;
+  transition: 0.2s;
+  -webkit-user-select: none;
+}
+
+/*Footer Logo*/
+
+/* Social Media Icons */

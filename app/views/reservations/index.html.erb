@@ -1,0 +1,9 @@
+<h1>Seat Yourself</h1>
+
+<h3>Reservations</h3>
+
+<% @reservations.each do |reservation| %>
+<%= reservation.name %>
+<p>Party of <%= reservation.guest %></p>
+<% end %>
+<%= link_to "Create Reservation", new_restaurant_reservation_path(@restaurant) %>

@@ -1,0 +1,11 @@
+<h1>Reservation Made!</h1>
+
+<p>Restaurant: <%= @reservation.restaurant.name %></p>
+<p>Address: <%= @reservation.restaurant.address %></p>
+
+ <h3>Reservation</h2>
+<p><%= @reservation.name %></p>
+<p>Party of: <%= @reservation.guest %></p>
+<p>Time of Reservation: <%= @reservation.date %></p>
+
+<%= link_to "Back To Restaurants", restaurants_path %>

@@ -1,0 +1,10 @@
+
+<h2>Restaurants</h2>
+<p><%= @restaurant.name %></p>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+
+<%= link_to "Back to Restaurants", restaurants_path %>
+
+<p>Reservation for this restaurant</p>
+<%= link_to "Create Reservation", new_restaurant_reservation_path(@restaurant) %>
